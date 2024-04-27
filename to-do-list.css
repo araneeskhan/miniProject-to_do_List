@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background: #dde9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100vw;
+  }
+  
+.title {
+    font-weight: 600;
+    color: #600050;
+    letter-spacing: 1px;
+    margin: 20px 0;
+  }
+  
+  .todo-list {
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: aliceblue;
+  }
+  
+  .list-head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .entered-list {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #221a1a;
+    font-family: 'sans-serif';
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .add-list {
+    border: none;
+    border-radius: 5px;
+    background-color: #600050;
+    font-size: 28px;
+    color: aliceblue;
+    outline: none;
+    cursor: pointer;
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .tasks {
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .item {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  .item.completed p {
+    text-decoration: line-through;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .item-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .item-btn i {
+    color: #600050;
+  }
+
+  @media (min-width: 668px) {
+
+    .title {
+      font-size: 30px;
+      
+    }
+  
+    .todo-list {
+      width: 450px;
+    }
+  
+    .list-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+      
+    .list-head .entered-list {
+        flex-grow: 1;
+    }
+      
+    .list-head .add-list {
+        flex-shrink: 0;
+    }
+  
+    .entered-list {
+      font-size: 16px;
+    }
+  
+    .add-list {
+        padding: 0 15px 0 15px;
+      font-size: 32px;
+    }
+  
+    .tasks {
+      margin-top: 30px;
+    }
+  
+    .item p {
+      font-size: 18px;
+    }
+}
+  
